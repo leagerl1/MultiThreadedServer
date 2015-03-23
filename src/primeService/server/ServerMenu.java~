@@ -1,0 +1,24 @@
+package primeService.server;
+
+import java.util.Scanner;
+
+public class ServerMenu{
+    public static int menu(){
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Please enter an option:\n1) Client Name\n2) All Clients\n3) Quit\n");
+	int input = scan.nextInt();
+	switch(input){
+	case 1:
+	    System.out.println("Print client name");
+	    //Client Name
+	    return 1;
+	case 2:
+	    System.out.println("Print all clients");
+	    // Print all clients
+	    return 2;
+	case 3:
+	    System.exit(0);
+	}
+	return 0;
+    }
+}

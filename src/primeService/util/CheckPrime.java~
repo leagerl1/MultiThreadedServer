@@ -1,0 +1,19 @@
+package primeService.util;
+public class CheckPrime{
+    public static String isPrime(int num){
+	if(num < 3){
+	    return "Not Valid input";
+	}
+	else{
+	    if(num % 2 == 0){
+		return "Not Prime";
+	    }
+	    for(int i = 4; i < num; i++){
+		if(num % i == 0){
+		    return "Not Prime";
+		}
+	    }
+	    return "Prime";
+	}
+    }
+}
